@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div>
       <div className="flex justify-between border-b px-3 py-2 items-center">
-        <h1 className="text-2xl font-medium">
+        <h1 className="text-xl font-medium">
           The <span className="text-[#f96d00]">Mars'</span> Logbook
         </h1>
         <ul className="flex gap-2 text-3xl items-center">

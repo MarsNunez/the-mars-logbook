@@ -6,7 +6,6 @@ export const metadata = {
   title: "The Mars' Logbook",
   description: "Mars Blog",
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -23,7 +22,6 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
-        <Navbar />
         {children}
         <Footer />
       </body>

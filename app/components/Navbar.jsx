@@ -1,6 +1,7 @@
+import Link from "next/link";
 import { FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
 import { PiStackOverflowLogoFill } from "react-icons/pi";
-const Navbar = () => {
+const Navbar = ({ page }) => {
   return (
     <div>
       <div className="flex justify-between border-b px-3 py-2 items-center">
@@ -21,11 +22,33 @@ const Navbar = () => {
       </div>
       <nav>
         <ul className="flex justify-center gap-6 border-b">
-          <li className="border-b-2 py-1 border-[#f96d00] font-medium text-[#f96d00]">
-            Home
+          <li
+            className={`border-b-2 py-1 ${
+              page == "mainpage"
+                ? "border-[#f96d00] font-medium text-[#f96d00]"
+                : "border-transparent"
+            }`}
+          >
+            <Link href={"/"}>Home</Link>
           </li>
-          <li className="border-b-2 border-transparent py-1">Posts</li>
-          <li className="border-b-2 border-transparent py-1">About</li>
+          <li
+            className={`border-b-2 py-1 ${
+              page == "postspage"
+                ? "border-[#f96d00] font-medium text-[#f96d00]"
+                : "border-transparent"
+            }`}
+          >
+            <Link href={"/posts"}>Posts</Link>
+          </li>
+          <li
+            className={`border-b-2 py-1 ${
+              page == "aboutpage"
+                ? "border-[#f96d00] font-medium text-[#f96d00]"
+                : "border-transparent"
+            }`}
+          >
+            <Link href={"/about"}>About</Link>
+          </li>
         </ul>
       </nav>
     </div>

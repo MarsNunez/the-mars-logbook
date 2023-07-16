@@ -1,5 +1,4 @@
 import PostCard from "./PostCard";
-import { BsArrowRightShort } from "react-icons/bs";
 
 const PostCardWrapper = () => {
   return (
@@ -7,10 +6,6 @@ const PostCardWrapper = () => {
       <PostCard />
       <PostCard />
       <PostCard />
-      <div className="flex items-center gap-1 w-fit pr-2">
-        <p>See all</p>
-        <BsArrowRightShort />
-      </div>
     </div>
   );
 };

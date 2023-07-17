@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 const PostCard = () => {
   return (
-    <>
+    <Link href={"/posts/10"}>
       <div className="border-t pt-3 flex flex-col gap-1 pb-4">
         <figure className="hidden">
           <img src="/img/test.jpg" alt="card-image" />
@@ -20,7 +22,7 @@ const PostCard = () => {
           </div>
         </div>
       </div>
-    </>
+    </Link>
   );
 };
 

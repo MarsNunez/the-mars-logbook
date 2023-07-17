@@ -2,7 +2,7 @@ import MainPage from "./components/MainPage";
 
 export default function Home() {
   return (
-    <main>
+    <main className="screen">
       <MainPage />
     </main>
   );

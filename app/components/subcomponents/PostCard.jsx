@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Badge from "./Badge";
 
 const PostCard = () => {
   return (
@@ -13,13 +14,8 @@ const PostCard = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac felis
           egestas, congue tortor eget.
         </p>
-        <div className="text-xs flex gap-2 flex-wrap mt-1">
-          <div className="border border-black rounded-full w-fit h-fit px-2 font-medium">
-            <p>Tech</p>
-          </div>
-          <div className="border border-black rounded-full w-fit h-fit px-2 font-medium">
-            <p>Live</p>
-          </div>
+        <div className="flex gap-2 flex-wrap mt-1">
+          <Badge name={"Tech"} />
         </div>
       </div>
     </Link>

@@ -5,51 +5,62 @@ const Navbar = ({ page }) => {
   return (
     <div>
       <div className="flex justify-between border-b px-3 py-2 items-center">
-        <h1 className="text-xl font-medium">
-          The <span className="text-[#f96d00]">Mars'</span> Logbook
-        </h1>
-        <ul className="flex gap-2 text-3xl items-center">
-          <li>
+        <Link href={"/"}>
+          <h1 className="text-xl font-medium">
+            The <span className="text-[#f96d00]">Mars'</span> Logbook
+          </h1>
+        </Link>
+        <div className="flex gap-2 text-3xl items-center">
+          <Link href={"https://twitter.com/MarsNunezDev"} target="_blank">
             <FaTwitterSquare />
-          </li>
-          <li>
+          </Link>
+          <Link href={"https://github.com/MarsNunez"} target="_blank">
             <FaGithubSquare />
-          </li>
-          <li>
+          </Link>
+          <Link
+            href={"https://stackoverflow.com/users/11356864/mars-nunez"}
+            target="_blank"
+          >
             <PiStackOverflowLogoFill className="text-4xl" />
-          </li>
-        </ul>
+          </Link>
+        </div>
       </div>
       <nav>
-        <ul className="flex justify-center gap-6 border-b">
-          <li
-            className={`border-b-2 py-1 ${
-              page == "mainpage"
-                ? "border-[#f96d00] font-medium text-[#f96d00]"
-                : "border-transparent"
-            }`}
-          >
-            <Link href={"/"}>Home</Link>
-          </li>
-          <li
-            className={`border-b-2 py-1 ${
-              page == "postspage"
-                ? "border-[#f96d00] font-medium text-[#f96d00]"
-                : "border-transparent"
-            }`}
-          >
-            <Link href={"/posts"}>Posts</Link>
-          </li>
-          <li
-            className={`border-b-2 py-1 ${
-              page == "aboutpage"
-                ? "border-[#f96d00] font-medium text-[#f96d00]"
-                : "border-transparent"
-            }`}
-          >
-            <Link href={"/about"}>About</Link>
-          </li>
-        </ul>
+        <div className="flex justify-center gap-3 border-b">
+          <Link href={"/"}>
+            <div
+              className={`border-b-2 py-1 ${
+                page == "mainpage"
+                  ? "border-[#f96d00] font-medium text-[#f96d00]"
+                  : "border-transparent"
+              } hover:bg-slate-100 px-2`}
+            >
+              Home
+            </div>
+          </Link>
+          <Link href={"/posts"}>
+            <div
+              className={`border-b-2 py-1 ${
+                page == "postspage"
+                  ? "border-[#f96d00] font-medium text-[#f96d00]"
+                  : "border-transparent"
+              } hover:bg-slate-100 px-2`}
+            >
+              Posts
+            </div>
+          </Link>
+          <Link href={"/about"}>
+            <div
+              className={`border-b-2 py-1 ${
+                page == "aboutpage"
+                  ? "border-[#f96d00] font-medium text-[#f96d00]"
+                  : "border-transparent"
+              } hover:bg-slate-100 px-2`}
+            >
+              About
+            </div>
+          </Link>
+        </div>
       </nav>
     </div>
   );

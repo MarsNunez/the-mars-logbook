@@ -10,7 +10,7 @@ const MainPage = () => {
     <div>
       <Navbar page="mainpage" />
       <Header />
-      <div className="md:px-9">
+      <div className="md:px-4 max-w-4xl mx-auto">
         <MainPostCard />
         <div className="px-4 md:px-0">
           <PostCardsWrapper />

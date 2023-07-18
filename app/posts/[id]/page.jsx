@@ -11,7 +11,7 @@ const Post = () => {
   return (
     <div className="screen">
       <Navbar page={"postspage"} />
-      <div className="p-3 md:px-6">
+      <div className="p-3 md:px-6 max-w-4xl mx-auto">
         <div className="border-b mb-3">
           <h2 className="text-3xl md:text-4xl font-semibold mb-3 md:mb-8 md:mt-5">
             Stop Procrastinating, this is your life ashole!
@@ -25,7 +25,7 @@ const Post = () => {
           arcu urna, blandit eget tellus ut, hendrerit consequat lacus. Praesent
           eu ligula vitae arcu pharetra facilisis.
         </p>
-        <img src="/img/test.jpg" alt="post-img" />
+        <img src="/img/test.jpg" alt="post-img" className="mx-auto" />
         <p className="text-center italic text-xs md:text-sm mt-4">
           asdasdasf asd afasf af as f
         </p>

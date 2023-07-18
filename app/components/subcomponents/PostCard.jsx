@@ -8,7 +8,7 @@ const PostCard = () => {
         <figure className="hidden">
           <img src="/img/test.jpg" alt="card-image" />
         </figure>
-        <p className="font-medium text-xs">19 Jan 2001</p>
+        <p className="font-medium text-xs">Feb 04 2001</p>
         <h3 className="font-medium">Migrating to Linear 101</h3>
         <p className="text-sm">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac felis

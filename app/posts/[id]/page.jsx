@@ -41,7 +41,7 @@ const Post = ({ params }) => {
         <img
           src={img.url}
           alt="post-img"
-          className="mx-auto md:min-h-[390px] h-full shadow-2xl mt-8"
+          className="mx-auto md:min-h-[390px] h-full max-h-[200px] object-cover shadow-2xl mt-8"
         />
         <p className="text-center italic text-sm md:text-base mt-7 md:mt-10">
           {entry}
@@ -53,11 +53,23 @@ const Post = ({ params }) => {
         </div>
         <hr />
         <h3 className="text-2xl font-medium mt-5 text-center">
+          Related <span className="text-[#f96d00]">Video</span>
+        </h3>
+        <iframe
+          frameBorder="0"
+          scrolling="no"
+          marginHeight="0"
+          marginWidth="0"
+          // width="788.54"
+          className="w-full mt-5 h-full min-h-[220px] sm:min-h-[443px]"
+          type="text/html"
+          src="https://www.youtube.com/embed/LSmzPwaemaQ?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"
+        ></iframe>
+        <hr />
+        <h3 className="text-2xl font-medium mt-5 text-center">
           My <span className="text-[#f96d00]">3 </span>Latest posts
         </h3>
-
         <PostCardWrapper posts={latestPosts} />
-
         <Link href={"/posts"}>
           <div className="flex items-center gap-1 w-fit mt-3 mx-auto">
             <p className="">See all</p>

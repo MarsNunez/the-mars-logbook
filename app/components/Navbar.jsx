@@ -7,7 +7,7 @@ const Navbar = ({ page }) => {
       <div className="flex justify-between border-b px-3 py-2 items-center">
         <Link href={"/"}>
           <h1 className="text-xl font-medium md:text-3xl">
-            The <span className="text-[#f96d00]">Mars'</span> Logbook
+            The <span className="text-[#f96d00]">Mars&apos;</span> Logbook
           </h1>
         </Link>
         <div className="flex gap-2 text-3xl md:text-5xl items-center">

@@ -6,7 +6,7 @@ const Header = () => {
       </h1>
       <div className="flex gap-3 mt-2 md:mt-5 items-center w-fit mx-auto text-lg md:text-2xl italic font-medium">
         <h2>Welcome to my planet</h2>
-        <img src="/img/mars.png" alt="title image" className="w-7" />
+        <img src="/img/mars.png" alt="title image nice" className="w-7" />
       </div>
     </header>
   );

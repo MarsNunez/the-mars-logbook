@@ -52,7 +52,7 @@ const Post = ({ params }) => {
           {/* HERE */}
         </div>
         <hr />
-        <h3 className="text-2xl font-medium mt-5 text-center">
+        {/* <h3 className="text-2xl font-medium mt-5 text-center">
           Related <span className="text-[#f96d00]">Video</span>.
         </h3>
         <iframe
@@ -65,7 +65,7 @@ const Post = ({ params }) => {
           type="text/html"
           src="https://www.youtube.com/embed/LSmzPwaemaQ?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"
         ></iframe>
-        <hr />
+        <hr /> */}
         <h3 className="text-2xl font-medium mt-5 text-center">
           My <span className="text-[#f96d00]">3 </span>Latest posts
         </h3>

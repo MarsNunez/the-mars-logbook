@@ -44,7 +44,7 @@ const Post = () => {
         </p>
         <hr />
         <h3 className="text-2xl font-medium mt-5">3 Latest posts</h3>
-        <PostCardWrapper />
+        {/* <PostCardWrapper /> */}
 
         <Link href={"/posts"}>
           <div className="flex items-center gap-1 w-fit mt-3">

@@ -1,4 +1,4 @@
-import { FaMicrochip, FaClover } from "react-icons/fa6";
+import { FaMicrochip, FaClover, FaPoop } from "react-icons/fa6";
 import { BsFillBookFill } from "react-icons/bs";
 import { HiSparkles } from "react-icons/hi";
 import { BiSolidPlanet } from "react-icons/bi";
@@ -14,6 +14,9 @@ export const getBadgeIcon = (label) => {
       break;
     case "books":
       icon = <BsFillBookFill />;
+      break;
+    case "shit":
+      icon = <FaPoop />;
       break;
     case "random":
       icon = <FaClover />;

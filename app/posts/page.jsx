@@ -9,8 +9,8 @@ const PostsPage = () => {
         Once upon a time on <span className="text-[#f96d00]">Mars...</span>
       </h2>
       <div className="px-4 max-w-4xl mx-auto">
-        <PostCardWrapper />
-        <PostCardWrapper />
+        {/* <PostCardWrapper />
+        <PostCardWrapper /> */}
       </div>
     </div>
   );

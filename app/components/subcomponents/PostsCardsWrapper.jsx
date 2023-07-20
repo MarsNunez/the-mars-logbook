@@ -1,11 +1,12 @@
 import PostCard from "./PostCard";
 
-const PostCardWrapper = () => {
+const PostCardWrapper = ({ posts }) => {
+  console.log(posts);
   return (
     <div className="mt-5">
-      <PostCard />
-      <PostCard />
-      <PostCard />
+      {posts.map((post) => {
+        return <PostCard key={post.node.id} post={post} />;
+      })}
     </div>
   );
 };

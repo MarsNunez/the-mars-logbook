@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 
 const AboutPage = () => {
   return (
-    <div className="screen">
+    <div className="screen pb-10">
       <Navbar page="aboutpage" />
       <img
         src="/img/me.jpg"

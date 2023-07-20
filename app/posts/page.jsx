@@ -1,7 +1,11 @@
+"use client";
 import Navbar from "../components/Navbar";
 import PostCardWrapper from "../components/subcomponents/PostsCardsWrapper";
+import { use } from "react";
+import { getPosts } from "../../services";
 
 const PostsPage = () => {
+  const posts = use(getPosts()) || [];
   return (
     <div className="screen">
       <Navbar page="postspage" />
@@ -9,8 +13,7 @@ const PostsPage = () => {
         Once upon a time on <span className="text-[#f96d00]">Mars...</span>
       </h2>
       <div className="px-4 max-w-4xl mx-auto">
-        {/* <PostCardWrapper />
-        <PostCardWrapper /> */}
+        <PostCardWrapper posts={posts.reverse()} />
       </div>
     </div>
   );

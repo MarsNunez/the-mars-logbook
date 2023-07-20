@@ -26,9 +26,9 @@ const MainPostCard = ({ post }) => {
           <p className="text-xs line-clamp-3 md:text-base md:text-gray-600">
             {entry}
           </p>
-          <div className="mt-3 hidden md:flex justify-center">
+          <div className="mt-3 hidden md:flex gap-2 justify-center">
             {badges.map((badge) => (
-              <Badge id={badge.name} name={badge.name} />
+              <Badge id={badge.name} name={badge.name} key={badge.name} />
             ))}
           </div>
         </div>

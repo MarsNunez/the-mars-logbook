@@ -7,7 +7,7 @@ import PostCardsWrapper from "./subcomponents/PostsCardsWrapper";
 import { BsArrowRightShort } from "react-icons/bs";
 
 import { use } from "react";
-import { getPosts } from "../services";
+import { getPosts } from "../../services";
 
 const MainPage = () => {
   const posts = use(getPosts()) || [];
@@ -21,8 +21,8 @@ const MainPage = () => {
           <PostCardsWrapper posts={posts.reverse().reverse().slice(1)} />
         </div>
         <Link href={"/posts"}>
-          <div className="flex items-center gap-1 w-fit pl-4 md:pl-0 mt-2">
-            <p>See all</p>
+          <div className="flex items-center gap-1 w-fit mt-3 mx-auto">
+            <p className="">See all</p>
             <BsArrowRightShort />
           </div>
         </Link>

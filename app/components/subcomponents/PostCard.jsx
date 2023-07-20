@@ -7,7 +7,7 @@ const PostCard = ({ post }) => {
   return (
     <Link href={`/posts/${id}`}>
       <hr />
-      <div className="md:flex gap-7 md:my-2 md:px-3 py-3 md:hover:bg-slate-100 rounded-md duration-150 ease-in-out">
+      <div className="md:flex justify-between gap-7 md:my-2 md:px-3 py-3 md:hover:bg-slate-100 rounded-md duration-150 ease-in-out">
         <div className="flex flex-col gap-1">
           <figure className="hidden">
             <img src="/img/test.jpg" alt="card-image" />
@@ -19,7 +19,7 @@ const PostCard = ({ post }) => {
           <p className="text-sm line-clamp-2">{entry}</p>
           <div className="flex gap-2 flex-wrap mt-1">
             {badges.map((badge) => (
-              <Badge id={badge.name} name={badge.name} />
+              <Badge key={badge.name} id={badge.name} name={badge.name} />
             ))}
           </div>
         </div>

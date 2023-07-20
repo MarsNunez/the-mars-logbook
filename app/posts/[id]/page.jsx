@@ -1,4 +1,4 @@
-// "use client"; NO USAR
+"use client"; // NO USAR
 import { getPosts } from "@/services";
 import { use } from "react";
 
@@ -16,8 +16,9 @@ import rehypeRaw from "rehype-raw";
 
 const Post = ({ params }) => {
   const post = use(getPosts()).filter((post) => post.node.id == params.id)[0];
+  console.log(post);
   const latestPosts = use(getPosts()).reverse().slice(0, 3);
-  const { title, entry, img, badges, content } = post.node;
+  const { title, entry, img, badges, content, videoUrl } = post.node;
 
   return (
     <div className="screen">
@@ -52,20 +53,24 @@ const Post = ({ params }) => {
           {/* HERE */}
         </div>
         <hr />
-        {/* <h3 className="text-2xl font-medium mt-5 text-center">
-          Related <span className="text-[#f96d00]">Video</span>.
-        </h3>
-        <iframe
-          frameBorder="0"
-          scrolling="no"
-          marginHeight="0"
-          marginWidth="0"
-          // width="788.54"
-          className="w-full mt-5 h-full min-h-[220px] sm:min-h-[443px]"
-          type="text/html"
-          src="https://www.youtube.com/embed/LSmzPwaemaQ?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"
-        ></iframe>
-        <hr /> */}
+        {videoUrl && (
+          <>
+            <h3 className="text-2xl font-medium mt-5 text-center">
+              Related <span className="text-[#f96d00]">Video</span>.
+            </h3>
+            <iframe
+              frameBorder="0"
+              scrolling="no"
+              marginHeight="0"
+              marginWidth="0"
+              // width="788.54"
+              className="w-full mt-5 h-full min-h-[220px] sm:min-h-[443px]"
+              type="text/html"
+              src={videoUrl}
+            ></iframe>
+            <hr />
+          </>
+        )}
         <h3 className="text-2xl font-medium mt-5 text-center">
           My <span className="text-[#f96d00]">3 </span>Latest posts
         </h3>

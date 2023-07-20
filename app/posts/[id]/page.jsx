@@ -53,7 +53,7 @@ const Post = ({ params }) => {
         </div>
         <hr />
         <h3 className="text-2xl font-medium mt-5 text-center">
-          Related <span className="text-[#f96d00]">Video</span>
+          Related <span className="text-[#f96d00]">Video</span>.
         </h3>
         <iframe
           frameBorder="0"
